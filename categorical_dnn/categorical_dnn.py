@@ -13,12 +13,11 @@ class CategoricalDNN:
         It assumes that the last column of the data is the `label` or `class` to train for.
     '''
 
-    def __init__(self, file_name, columns, training_size, learning_rate, iterations):
+    def __init__(self, file_name, training_size, learning_rate, iterations):
 
         # Check to see if the parameters are valid
         if os.path.isfile(file_name):
             self._file_name = file_name
-            self._columns = columns
             self._training_size = training_size
             self._learning_rate = learning_rate
             self._iterations = iterations
