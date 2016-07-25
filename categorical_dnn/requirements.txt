@@ -1,0 +1,10 @@
+scipy
+numpy
+protobuf
+six
+https://storage.googleapis.com/tensorflow/mac/tensorflow-0.9.0-py2-none-any.whl
+tflearn
+nose
+h5py
+sklearn
+pandas
