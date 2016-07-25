@@ -1,2 +1,2 @@
 # Categorical DNN
-http://tanzimsaqib.com/deep-learning-tensorflow-steps/
+http://tanzimsaqib.com/deep-learning-tensorflow/
