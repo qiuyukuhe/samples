@@ -56,7 +56,9 @@ class CategoricalDNN:
         # TF Learn / TensorFlow only takes int32 / int64 at the moment as oppose to int8
         self._train_label = [int(row) for row in self._traindata[self._raw_data.columns[self._datadim - 1]]]
         self._test_label = [int(row) for row in self._testdata[self._raw_data.columns[self._datadim - 1]]]
-
+        self._traindata = self._traindata.ix[:, range(self._datadim - 1)]
+        self._testdata = self._testdata.ix[:, range(self._datadim - 1)]
+        
     def train(self):
 
         # The rule: my own rule aka. own intuition
